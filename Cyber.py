@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-Cyber_Data = pd.read_excel("C:/Users/sande/Desktop/cyber_data.xlsx")
+Cyber_Data = pd.read_excel(#path)
 Cyber_Data.replace({'Yes': 1, 'No': 0}, inplace=True)
 
 
@@ -23,6 +23,6 @@ print("Predicted:", y_pred)
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
-new_person = pd.read_excel("C:/Users/sande/Desktop/cyberpred.xlsx")
+new_person = pd.read_excel(#path)
 new_prediction = model.predict(new_person)
 print("New Prediction:", new_prediction)
